@@ -1,0 +1,10 @@
+**/.vagrant/
+**/.secrets/
+.DS_Store
+
+# Local GitOps checkout; submit the copied manifests under p3/.
+p3/github/
+
+# Offline archives are too large for a regular GitHub repository.
+offline/*
+!offline/README.md
