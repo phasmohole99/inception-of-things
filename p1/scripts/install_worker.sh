@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+# set -euo pipefail
 
 if [[ -z "${K3S_TOKEN:-}" && -s /vagrant/.secrets/node-token ]]; then
   K3S_TOKEN=$(< /vagrant/.secrets/node-token)

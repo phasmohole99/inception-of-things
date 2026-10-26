@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
         - name: app1
-          image: hashicorp/http-echo:1.0
-          args: ["-text=app1"]
+          image: paulbouwer/hello-kubernetes:1.5
           ports:
-            - containerPort: 5678
+            - containerPort: 8080
+          env:
+            - name: MESSAGE
+              value: "Hello from app1."

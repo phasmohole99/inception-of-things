@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+#set -euo pipefail
 
 for attempt in {1..60}; do
   if kubectl get --raw=/readyz >/dev/null 2>&1; then
